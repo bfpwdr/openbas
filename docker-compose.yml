@@ -39,7 +39,7 @@ services:
     volumes:
       - type: bind
         source: caldera.yml
-        target: /usr/src/app/conf/local.yml
+        target: caldera:/usr/src/app/conf/local.yml
   openbas:
     image: openbas/platform:1.0.0
     environment:
@@ -104,3 +104,4 @@ volumes:
   pgsqldata:
   s3data:
   amqpdata:
+  caldera:
